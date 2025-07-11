@@ -3,6 +3,7 @@
 
 <head>
     <title>Six-Handed Euchre Data Entry</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link href="./styles/index.css" type="text/css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +17,23 @@
 
     <main>
         <div id="bid-data-entry">
-            <h2 id="p1-bid-text">Player 1 Bid:</h2>
+            <div class="grid-container">
+                <div class="grid-item wide-grid player-label current-bidder">Player 1</div>
+                <div class="grid-item wide-grid player-label">Player 2</div>
+                <div class="grid-item wide-grid player-label">Player 3</div>
+                <div class="grid-item wide-grid player-label">Player 4</div>
+                <div class="grid-item wide-grid player-label">Player 5</div>
+                <div class="grid-item wide-grid player-label">Player 6</div>
+
+                <div class="grid-item bid-grid-item" id = "p1-bid"></div>
+                <div class="grid-item bid-grid-item" id = "p2-bid"></div>
+                <div class="grid-item bid-grid-item" id = "p3-bid"></div>
+                <div class="grid-item bid-grid-item" id = "p4-bid"></div>
+                <div class="grid-item bid-grid-item" id = "p5-bid"></div>
+                <div class="grid-item bid-grid-item" id = "p6-bid"></div>
+
+            </div>
+            <h2 id="bid-header-text">Player 1 Bid:</h2>
             <h3>Select number of tricks and suit:</h3>
             <div class="button-group">
                 <input type="radio" name="num-tricks" value="1" id="one-trick" checked>
@@ -61,8 +78,14 @@
 
                 <input type="radio" id="diamond" name="suit" value="♦️">
                 <label for="diamond">♦️</label>
-            </div>
 
+                <input type="radio" id="lo" name="suit" value="LO">
+                <label for="lo">LO</label>
+
+                <input type="radio" id="hi" name="suit" value="HI">
+                <label for="hi">HI</label>
+            </div>
+            <button id="next-player" class="button" onclick="nextPlayer()">Next Player</button>
 
         </div>
 
