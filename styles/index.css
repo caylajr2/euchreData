@@ -99,6 +99,17 @@ transform: scale(1.05);
   color: white;
 }
 
+.error {
+    color: red;
+    font-style: italic;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+#bid-error-message {
+    display: none;
+}
+
 /* handle narrow screens */
 /* @media (max-width: 600px) {
     .wide-grid {
