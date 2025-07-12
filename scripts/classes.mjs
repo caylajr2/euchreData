@@ -20,6 +20,10 @@ class Card {
     get value() {
         return this._value;
     }
+    toString() {
+        let str = `{ ${this._suit} ${this._value} }`;
+        return str;
+    }
 }
 
 class Bid {
@@ -162,7 +166,53 @@ const createDeck = () => {
 
 
 
+// Card Test Functions
 
+const createCards = () => {
+    const cards = [
+        new Card('spades', '9'),
+        new Card('hearts', '10'),
+        new Card('diamonds', 'J'),
+        new Card('clubs', 'Q'),
+        new Card('hearts', 'K'),
+        new Card('clubs', 'A')
+    ];
+
+    cards.forEach(card => console.log(card.toString()));
+}
+
+const createCardInvalidSuit = () => {
+    try {
+        const card = new Card('stars', '9');
+    } catch (e) {
+        console.log(e);
+    }
+}
+
+const createCardInvalidValue = () => {
+    try {
+        const card = new Card('clubs', '7');
+    } catch (e) {
+        console.log(e);
+    }
+}
+
+const runAllCardTests = () => {
+    console.log("Creating one card of each value and suit");
+    createCards();
+
+
+    console.log('Testing card invalid suit:');
+    createCardInvalidSuit();
+
+
+    console.log('Testing card invalid value:');
+    createCardInvalidValue();
+}
+
+
+
+// Trick Test Functions
 
 const addCardsToTrick = (deck) => {
     const trick = new Trick();
@@ -189,7 +239,7 @@ const addCardToFullTrick = (deck) => {
         
         // add card to trick
         trick.playCard(deck[x]);
-
+        
     }
     try {
         // get random card in deck
@@ -218,7 +268,7 @@ const removeCardFromTrick = (deck) => {
 
 const removeCardFromEmptyTrick = (deck) => {
     const trick = new Trick();
-
+    
     // check removing card when trick is empty
     try {
         trick.removeCard();
@@ -227,33 +277,48 @@ const removeCardFromEmptyTrick = (deck) => {
     }
 }
 
-    
-    
-    
-    
+const runAllTrickTests = () => {
+    console.log("Creating cards in deck:\n");
+    const deck = createDeck();
+
+    console.log('\n\n\nAdding 6 cards to new trick object:\n');
+    addCardsToTrick(deck);
+
+    console.log('\n\n\nAdding 7th card to full trick object:\n');
+    addCardToFullTrick(deck);
+
+    console.log('\n\n\nRemoving card from trick object:\n');
+    removeCardFromTrick(deck);
+
+    console.log('\n\n\nRemoving card from empty trick object:\n');
+    removeCardFromEmptyTrick(deck);
+}
+
+
+
 
 console.log("Testing...");
 
+
+
+// Create deck to choose cards from in future tests
+// console.log("Creating cards in deck:\n");
+// const deck = createDeck();
+
+
+
+
+
 // Creating Cards
-console.log("Creating cards in deck:\n");
-const deck = createDeck();
+
+runAllCardTests();
+
 
 
 
 // Testing trick functions
 
-console.log('\n\n\nAdding 6 cards to new trick object:\n');
-addCardsToTrick(deck);
-
-console.log('\n\n\nAdding 7th card to full trick object:\n');
-addCardToFullTrick(deck);
-
-console.log('\n\n\nRemoving card from trick object:\n');
-removeCardFromTrick(deck);
-
-console.log('\n\n\nRemoving card from empty trick object:\n');
-removeCardFromEmptyTrick(deck);
-
+runAllTrickTests();
 
 
 
