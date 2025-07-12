@@ -1,5 +1,6 @@
 const suits = ['spades', 'hearts', 'diamonds', 'clubs'];
 const values = ['9', '10', 'J', 'Q', 'K', 'A'];
+const trumps = ['spades', 'hearts', 'diamonds', 'clubs', 'high', 'low'];
 
 
 class Card {
@@ -22,16 +23,16 @@ class Card {
 }
 
 class Bid {
-    constructor(name, suit, tricks) {
-        if (!suits.includes(suit)) {
+    constructor(name, trump, tricks) {
+        if (!trumps.includes(trump)) {
             throw Error('Suit must be one of the following: spades, hearts, diamonds, clubs');
         }
         this._name = name;
-        this._suit = suit;
+        this._trump = trump;
         this._tricks = tricks;
     }
-    get suit() {
-        return this._suit;
+    get trump() {
+        return this._trump;
     }
     get tricks() {
         return this._tricks
@@ -153,26 +154,19 @@ const createDeck = () => {
             deck.push(new Card(suit, value));
         }
     }
-
+    
     //verify creation of deck and cards
     console.log(deck);
     return deck;
 }
 
-const removeCardFromEmptyTrick = (deck) => {
-    const trick = new Trick();
 
-    // check removing card when trick is empty
-    try {
-        trick.removeCard();
-    } catch (e) {
-        console.log(e);
-    }
-}
+
+
 
 const addCardsToTrick = (deck) => {
     const trick = new Trick();
-
+    
     for (let i = 0; i < 6; i++) {
         // get random card in deck
         let x = Math.floor(Math.random() * deck.length);
@@ -180,9 +174,31 @@ const addCardsToTrick = (deck) => {
         // add card to trick
         console.log(`Adding card: ${deck[x].suit} ${deck[x].value}`);
         trick.playCard(deck[x]);
-
+        
         // print out to verify
         console.log(trick.toString());
+    }
+}
+
+const addCardToFullTrick = (deck) => {
+    const trick = new Trick();
+    
+    for (let i = 0; i < 6; i++) {
+        // get random card in deck
+        let x = Math.floor(Math.random() * deck.length);
+        
+        // add card to trick
+        trick.playCard(deck[x]);
+
+    }
+    try {
+        // get random card in deck
+        let x = Math.floor(Math.random() * deck.length);
+        
+        // add card to trick
+        trick.playCard(deck[x]);
+    } catch (e) {
+        console.log(e);
     }
 }
 
@@ -191,7 +207,7 @@ const removeCardFromTrick = (deck) => {
     let numCards = Math.floor(Math.random() * 5)+1;
     for (let i = 0; i < numCards; i++) {
         let x = Math.floor(Math.random() * deck.length);
-            
+        
         // add card to trick
         trick.playCard(deck[x]);
     }
@@ -200,23 +216,12 @@ const removeCardFromTrick = (deck) => {
     console.log(`Final Trick: ${trick.toString()}`);
 }
 
-const addCardToFullTrick = (deck) => {
+const removeCardFromEmptyTrick = (deck) => {
     const trick = new Trick();
 
-    for (let i = 0; i < 6; i++) {
-        // get random card in deck
-        let x = Math.floor(Math.random() * deck.length);
-        
-        // add card to trick
-        trick.playCard(deck[x]);
-
-    }
+    // check removing card when trick is empty
     try {
-        // get random card in deck
-        let x = Math.floor(Math.random() * deck.length);
-        
-        // add card to trick
-        trick.playCard(deck[x]);
+        trick.removeCard();
     } catch (e) {
         console.log(e);
     }
