@@ -28,8 +28,11 @@ class Card {
 
 class Bid {
     constructor(name, trump, tricks) {
-        if (!trumps.includes(trump)) {
-            throw Error('Suit must be one of the following: spades, hearts, diamonds, clubs');
+        if (tricks === 0 || tricks === 12 || tricks === 16) {
+            console.log("Bid was a pass, partner shoot, or shoot. Defer trump choice until later.")
+        }
+        else if (!trumps.includes(trump)) {
+            throw Error('Suit must be one of the following: spades, hearts, diamonds, clubs, high, low');
         }
         this._name = name;
         this._trump = trump;
@@ -40,6 +43,15 @@ class Bid {
     }
     get tricks() {
         return this._tricks
+    }
+    updateShooterTrump(trump) {
+        if (this._tricks !== 12 && this._tricks !== 16) {
+            throw Error('Bid is not a shooter and cannot be updated.');
+        }
+        else if (!trumps.includes(trump)) {
+            throw Error('Suit must be one of the following: spades, hearts, diamonds, clubs, high, low');
+        }
+        this._trump = trump;
     }
 }
 
@@ -297,16 +309,20 @@ const runAllTrickTests = () => {
 
 
 
+
+
+// Bid Test Functions
+
+
+
+
+
+
+
+
+
+// Calling test cases here
 console.log("Testing...");
-
-
-
-// Create deck to choose cards from in future tests
-// console.log("Creating cards in deck:\n");
-// const deck = createDeck();
-
-
-
 
 
 // Creating Cards
