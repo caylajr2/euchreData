@@ -1,3 +1,5 @@
+import { Bid, Trick } from '../scripts/classes.mjs';
+
 class Hand {
     constructor() {
         this._bids = [];

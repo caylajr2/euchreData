@@ -1,3 +1,5 @@
+import { Hand } from '../scripts/classes.mjs';
+
 class Game {
     constructor() {
         this._hands = [];

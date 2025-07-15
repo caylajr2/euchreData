@@ -24,4 +24,17 @@ class Card {
     }
 }
 
-export default Card;
+const createDeck = () => {
+    const deck = [];
+
+    for (const suit of suits) {
+        for (const value of values) {
+            deck.push(new Card(suit, value));
+        }
+    }
+    
+    return deck;
+}
+
+
+export { Card, createDeck };

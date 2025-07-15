@@ -1,3 +1,5 @@
+import { Card } from '../scripts/classes.mjs';
+
 class Trick {
     constructor() {
         this._cards = [];
@@ -23,7 +25,7 @@ class Trick {
     toString() {
         let str = "{\n";
         for (const card of this._cards) {
-            str += `\t ${card.suit} ${card.value}\n`;
+            str += `\t${card.suit} ${card.value}\n`;
         }
         str += '}';
         return str;
