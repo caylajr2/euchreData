@@ -12,83 +12,86 @@
 
 <body>
     <header>
-        <h1>Data Entry</h1>
+        <h1>Enter Bids</h1>
     </header>
 
     <main>
-        <div id="bid-data-entry">
-            <div class="grid-container">
-                <div class="grid-item wide-grid player-label current-bidder">Player 1</div>
-                <div class="grid-item wide-grid player-label">Player 2</div>
-                <div class="grid-item wide-grid player-label">Player 3</div>
-                <div class="grid-item wide-grid player-label">Player 4</div>
-                <div class="grid-item wide-grid player-label">Player 5</div>
-                <div class="grid-item wide-grid player-label">Player 6</div>
 
-                <div class="grid-item bid-grid-item" id = "p1-bid"></div>
-                <div class="grid-item bid-grid-item" id = "p2-bid"></div>
-                <div class="grid-item bid-grid-item" id = "p3-bid"></div>
-                <div class="grid-item bid-grid-item" id = "p4-bid"></div>
-                <div class="grid-item bid-grid-item" id = "p5-bid"></div>
-                <div class="grid-item bid-grid-item" id = "p6-bid"></div>
+        <div class="grid-container" id="bid-history">
+            <div class="grid-item wide-grid player-label current-bidder">Player 1</div>
+            <div class="grid-item wide-grid player-label">Player 2</div>
+            <div class="grid-item wide-grid player-label">Player 3</div>
+            <div class="grid-item wide-grid player-label">Player 4</div>
+            <div class="grid-item wide-grid player-label">Player 5</div>
+            <div class="grid-item wide-grid player-label">Player 6</div>
 
-            </div>
-            <h2 id="bid-header-text">Player 1 Bid:</h2>
-            <h3>Select number of tricks and suit:</h3>
-            <div class="button-group">
-                <input type="radio" name="num-tricks" value="1" id="one-trick" checked>
-                <label for="one-trick">1</label>
-
-                <input type="radio" name="num-tricks" value="2" id="two-trick">
-                <label for="two-trick">2</label>
-
-                <input type="radio" name="num-tricks" value="3" id="three-trick">
-                <label for="three-trick">3</label>  
-
-                <input type="radio" name="num-tricks" value="4" id="four-trick">
-                <label for="four-trick">4</label>
-
-                <input type="radio" name="num-tricks" value="5" id="five-trick">
-                <label for="five-trick">5</label>
-
-                <input type="radio" name="num-tricks" value="6" id="six-trick">
-                <label for="six-trick">6</label>
-
-                <input type="radio" name="num-tricks" value="7" id="seven-trick">
-                <label for="seven-trick">7</label>
-
-                <input type="radio" name="num-tricks" value="8" id="eight-trick">
-                <label for="eight-trick">8</label>
-
-                <input type="radio" name="num-tricks" value="Shoot" id="shoot-trick">
-                <label for="shoot-trick">Shoot</label>
-
-                <input type="radio" name="num-tricks" value="Pass" id="pass-trick">
-                <label for="pass-trick">Pass</label>
-            </div>
-            <div class="button-group">
-                <input type="radio" id="spade" name="suit" value="♠️">
-                <label for="spade">♠️</label>
-
-                <input type="radio" id="club" name="suit" value="♣️">
-                <label for="club">♣️</label>
-
-                <input type="radio" id="heart" name="suit" value="♥️">
-                <label for="heart">♥️</label>
-
-                <input type="radio" id="diamond" name="suit" value="♦️">
-                <label for="diamond">♦️</label>
-
-                <input type="radio" id="lo" name="suit" value="LO">
-                <label for="lo">LO</label>
-
-                <input type="radio" id="hi" name="suit" value="HI">
-                <label for="hi">HI</label>
-            </div>
-            <p id="bid-error-message" class="error">Please enter a valid bid</p>
-            <button id="next-player" class="button" onclick="nextPlayer()">Enter</button>
-
+            <div class="grid-item bid-grid-item" id = "p1-bid"></div>
+            <div class="grid-item bid-grid-item" id = "p2-bid"></div>
+            <div class="grid-item bid-grid-item" id = "p3-bid"></div>
+            <div class="grid-item bid-grid-item" id = "p4-bid"></div>
+            <div class="grid-item bid-grid-item" id = "p5-bid"></div>
+            <div class="grid-item bid-grid-item" id = "p6-bid"></div>
         </div>
+
+
+            <div class="wide-button-container">
+                <button id="pass-button" class="button wide-button" onclick="">Pass</button>
+            </div>
+
+            <h2 id="bid-header-text">Player 1 Bid:</h2>
+            <div class="button-container">
+                <div class="button-group">
+                    <input type="radio" name="num-tricks" value="1" id="one-trick" checked>
+                    <label for="one-trick">1</label>
+
+                    <input type="radio" name="num-tricks" value="2" id="two-trick">
+                    <label for="two-trick">2</label>
+
+                    <input type="radio" name="num-tricks" value="3" id="three-trick">
+                    <label for="three-trick">3</label>  
+
+                    <input type="radio" name="num-tricks" value="4" id="four-trick">
+                    <label for="four-trick">4</label>
+
+                    <input type="radio" name="num-tricks" value="5" id="five-trick">
+                    <label for="five-trick">5</label>
+
+                    <input type="radio" name="num-tricks" value="6" id="six-trick">
+                    <label for="six-trick">6</label>
+
+                    <input type="radio" name="num-tricks" value="7" id="seven-trick">
+                    <label for="seven-trick">7</label>
+
+                    <input type="radio" name="num-tricks" value="8" id="eight-trick">
+                    <label for="eight-trick">8</label>
+                </div>
+                <div class="button-group">
+                    <input type="radio" id="spade" name="suit" value="♠️">
+                    <label for="spade">♠️</label>
+
+                    <input type="radio" id="club" name="suit" value="♣️">
+                    <label for="club">♣️</label>
+
+                    <input type="radio" id="heart" name="suit" value="♥️">
+                    <label for="heart">♥️</label>
+
+                    <input type="radio" id="diamond" name="suit" value="♦️">
+                    <label for="diamond">♦️</label>
+
+                    <input type="radio" id="lo" name="suit" value="LO">
+                    <label for="lo">LO</label>
+
+                    <input type="radio" id="hi" name="suit" value="HI">
+                    <label for="hi">HI</label>
+                </div>
+            </div>
+
+            <div class="wide-button-container">
+                <p id="bid-error-message" class="error">Please enter a valid bid</p>
+                <button id="next-player" class="button wide-button" onclick="nextPlayer()">Enter</button>
+            </div>
+
+        
 
     </main>
 
