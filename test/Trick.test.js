@@ -10,7 +10,7 @@ describe('trick', () => {
     let cards5;
     let cards6;
     before(() => {
-        deck = createDeck();
+        deck = [new Card('hearts', '10'), new Card('spades', '9'), new Card('clubs', 'J'), new Card('diamonds', 'Q'), new Card('clubs', 'A'), new Card('hearts', 'A'), new Card('diamonds', 'Q')];
         cards1 = [new Card('hearts', '10')];
         cards5 = [new Card('hearts', '10'), new Card('spades', '9'), new Card('clubs', 'J'), new Card('diamonds', 'Q'), new Card('clubs', 'A')];
         cards6 = [new Card('hearts', '10'), new Card('spades', '9'), new Card('clubs', 'J'), new Card('diamonds', 'Q'), new Card('clubs', 'A'), new Card('hearts', 'A')];
@@ -21,7 +21,7 @@ describe('trick', () => {
         });
         it('adds card to empty trick', () => {
             const string = '{\n\thearts 10\n}';
-            trick.playCard(deck[7]);
+            trick.playCard(deck[0]);
             const res_str = trick.toString();
             assert.deepEqual(cards6[0], trick.cards[0]);
             assert.deepEqual(cards1, trick.cards);
@@ -29,10 +29,10 @@ describe('trick', () => {
         });
         it('adds cards 2-5 to trick', () => {
             const string = '{\n\thearts 10\n\tspades 9\n\tclubs J\n\tdiamonds Q\n\tclubs A\n}';
-            trick.playCard(deck[0]);
-            trick.playCard(deck[20]);
-            trick.playCard(deck[15]);
-            trick.playCard(deck[23]);
+            trick.playCard(deck[1]);
+            trick.playCard(deck[2]);
+            trick.playCard(deck[3]);
+            trick.playCard(deck[4]);
             const res_str = trick.toString();
             assert.deepEqual(cards6[1], trick.cards[1]);
             assert.deepEqual(cards6[2], trick.cards[2]);
@@ -43,7 +43,7 @@ describe('trick', () => {
         });
         it('adds card to almost full trick', () => {
             const string = '{\n\thearts 10\n\tspades 9\n\tclubs J\n\tdiamonds Q\n\tclubs A\n\thearts A\n}';
-            trick.playCard(deck[11]);
+            trick.playCard(deck[5]);
             const res_str = trick.toString();
             assert.deepEqual(cards6[5], trick.cards[5]);
             assert.deepEqual(cards6, trick.cards);
@@ -65,11 +65,10 @@ describe('trick', () => {
             assert.throws(() => trick.removeCard());
         });
         it('add card to full trick', () => {
-            for (const card of cards6) {
-                trick.playCard(card);
+            for (let i = 0; i < 6; i++) {
+                trick.playCard(deck[i]);
             }
-            const newCard = new Card('diamonds', 'Q');
-            assert.throws(() => trick.playCard(newCard));
+            assert.throws(() => trick.playCard(deck[6]));
         });
     });
 });
