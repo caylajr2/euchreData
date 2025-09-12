@@ -1,6 +1,6 @@
 // import assert
 import assert from 'assert';
-import { Card, Trick, createDeck } from '../scripts/classes.mjs';
+import { Card, Trick } from '../scripts/classes.mjs';
 
 // Naive approach
 describe('trick', () => {
