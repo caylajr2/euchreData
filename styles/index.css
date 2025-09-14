@@ -1,12 +1,23 @@
 * {
     font-family: Krub, sans-serif;
     color:#1a344d;
-    /* border: 1px solid #1a344d; */
+    border: 1px solid #1a344d;
+}
+
+h1, h2, h3 {
+    margin: 10px 5px;
 }
 
 main {
-    padding: 20px;;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content:flex-start;
+    max-width: 500px;
 }
+
+   
 
 .grid-container {
     display: grid;
@@ -17,7 +28,7 @@ main {
     max-width: 900px;
     min-width: 350px;
     width: 100%;
-    border: 1px solid #1a344d;
+    /* border: 1px solid #1a344d; */
     border-radius: 10px;
 
 }
@@ -45,13 +56,22 @@ main {
 .bid-grid-item {
     background-color: white;
     color: #1a344d;
-    min-height: 25px;;
+    min-height: 25px;
+    border: 1px solid #d4e9fd;
+
 }
 
 .current-bidder {
     background-color: #007BFF;
     color: white;
     font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    align-items: top;
+    justify-content: flex-end;
+    margin-top: 20px;
 }
 
 .button {
@@ -72,6 +92,16 @@ main {
     transform: scale(1.05);
 }
 
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  max-width: 400px;
+  height:fit-content
+}
+
 .button-group input[type="radio"] {
   display: none;
 }
@@ -79,7 +109,7 @@ main {
 .button-group label {
   display: inline-block;
   padding: 10px 20px;
-  margin: 10px 4px;
+  margin: 4px 4px;
   border-radius: 4px;
   background-color: #d4e9fd;
   color: #1a344d;
@@ -87,6 +117,9 @@ main {
   font-size:1.25em;
   cursor: pointer;
   transition: all 0.2s;
+  width: 20%;
+  max-width: 30px;
+  text-align: center;
 }
 
 .button-group label:hover {
@@ -97,6 +130,20 @@ transform: scale(1.05);
 .button-group input[type="radio"]:checked + label {
   background-color: #007BFF;
   color: white;
+}
+
+.wide-button {
+    width: 100%;
+    max-width: 300px;
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+.wide-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .error {
