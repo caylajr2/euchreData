@@ -1,0 +1,16 @@
+import react from 'react'
+import Card from './Card'
+import '../styles/cardButtonStyle.css'
+
+const CardButton = ({ card, addToTrick }) => {
+
+    return (
+        <>
+            <button onClick={() => addToTrick(card)}>
+                <Card card={card}/>
+            </button>
+        </>
+    )
+}
+
+export default CardButton

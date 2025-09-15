@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+
+}
+div.card-image {
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px 5px;
+
+}
+
+p.card-value {
+    font-size: 2.2em;
+    font-weight: bold;
+    font-family:'faustina','Times New Roman', Times, serif;
+    line-height: .6em;
+    color: black;
+
+}
+
+p.card-value-top {
+    text-align: left;
+    align-self: flex-start;
+
+}
+
+p.card-value-bottom {
+    text-align: right;
+    align-self: flex-end
+}
+
+img {
+    width: 60%;
+    align-self: center;
+}

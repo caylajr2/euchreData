@@ -1,0 +1,23 @@
+{
+  "name": "six-handed-euchre",
+  "version": "1.0.0",
+  "type":"module",
+  "description": "Site to enter six-handed euchre data",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caylajr2/euchreData.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caylajr2/euchreData/issues"
+  },
+  "homepage": "https://github.com/caylajr2/euchreData#readme",
+  "devDependencies": {
+    "mocha": "^11.7.1"
+  }
+}
