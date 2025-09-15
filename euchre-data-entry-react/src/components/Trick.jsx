@@ -8,7 +8,8 @@ const Trick = ({  }) => {
 
     return (
         <>
-            <CardButton card={{suit:'spade',value: 'K'}} addToTrick={addToTrick}/>
+            <CardButton card={{suit:'heart',value: 'A'}} addToTrick={addToTrick}/>
+            <CardButton card={{suit:'heart',value: 'K'}} addToTrick={addToTrick}/>
         </>
     )
 }
