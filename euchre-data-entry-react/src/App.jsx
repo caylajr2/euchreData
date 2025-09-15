@@ -4,12 +4,14 @@ import Trick from './components/Trick'
 
 
 function App() { 
-
+  const addCardToTrick = (card) => {
+        console.log(`${card.suit} ${card.value}`)
+    }
   
   return (
     <>
       <div className="card">
-        <Trick />
+        <Trick addCardToTrick={addCardToTrick}/>
       </div>
     </>
   )
