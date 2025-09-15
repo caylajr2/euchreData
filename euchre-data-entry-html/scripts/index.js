@@ -7,6 +7,7 @@ const playerLabels = document.querySelectorAll('.player-label');
 const mediaQuery = window.matchMedia("(max-width: 900px)");
 
 let playerNum=1;
+let bidTricks=0;
 
 // Add event listeners
 window.addEventListener('resize', updateScreenWidth);
@@ -66,6 +67,7 @@ function nextPlayer() {
             }
             console.log(`Current Player: ${playerNum}`);
             updateCurrentBidder(playerNum);
+            updateTrickRadios();
         }
     }
     else alert("Please select a valid bid for the current player before moving to the next player.");
@@ -95,4 +97,13 @@ function updateCurrentBidder(playerNum) {
     // Reset the radio buttons for the next player
     suitRadios.forEach(radio => radio.checked = false);
     trickRadios.forEach(radio => radio.checked = false);
+}
+
+function updateTrickRadios(){
+    trickRadios.forEach(radio => {
+        if (radio.value < bidTricks) {
+            radio.style.display = 'none'; // Disable radio buttons for tricks less than the current bid
+        }
+    });
+
 }
