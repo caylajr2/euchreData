@@ -1,4 +1,4 @@
-.cardButtonArray {
+ul {
   list-style: none;      /* remove default bullets */
   padding: 0;
   margin: 0;
@@ -7,7 +7,7 @@
   gap: 1rem;             /* spacing between items */
 }
 
-.cardButtonArray li {
+li {
   padding: 1rem;
   /* text-align: center; */
 }
