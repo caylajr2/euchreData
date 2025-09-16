@@ -7,17 +7,18 @@
 }
 div.card-image {
     border-radius: 8px;
-    width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 5px 5px;
-
+    padding: 10px 5px;
+    background-color: white;
+    height: 100px;
+    aspect-ratio: 2/3;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 p.card-value {
-    font-size: 2.2em;
+    font-size: 1.8em;
     font-weight: bold;
     font-family:'faustina','Times New Roman', Times, serif;
     line-height: .6em;

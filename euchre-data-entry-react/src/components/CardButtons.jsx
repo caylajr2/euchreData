@@ -1,7 +1,9 @@
 import CardButton from './CardButton'
 import '../styles/cardImageStyle.css'
 import '../styles/trickStyle.css'
-import {suits, values } from '../constants'
+import {values } from '../constants'
+import suits from './imageConstants.jsx'
+
 
 const CardButtons = ({ addCardToTrick }) => {
     const cardButtons = [];
