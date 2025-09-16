@@ -2,21 +2,22 @@ import { useState } from 'react'
 import './App.css'
 import Trick from './components/Trick'
 import CardButtons from './components/CardButtons'
+import TrickLogger from './components/TrickLogger'
 
 
 function App() { 
-  const [cardsPlayed, setCardsPlayed] = useState([]);
+  const [tricks, setTricks] = useState([]);
 
-  const addCardToTrick = (card) => {
-    setCardsPlayed(prev => [...prev, card])
-    console.log(`${card.suit} ${card.value}`)
+
+
+  const addTrickToHand = trick => {
+    setTricks(prev => [...prev, trick]);
   }
   
   return (
     <>
       <div className="card">
-        <Trick cardsPlayed={cardsPlayed} />
-        <CardButtons addCardToTrick={addCardToTrick} />
+        <TrickLogger tricksPlayed={tricks} addTrick={addTrickToHand} />
       </div>
     </>
   )
