@@ -1,8 +1,8 @@
-import react from 'react'
 import '../styles/cardImageStyle.css'
 
 
 const Card = ({ card }) => {
+    // get suit and value from card prop
     const { suit, value } = card;
 
     return (
