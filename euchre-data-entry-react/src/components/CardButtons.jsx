@@ -1,7 +1,7 @@
 import CardButton from './CardButton'
 import '../styles/cardImageStyle.css'
 import '../styles/trickStyle.css'
-import {values } from '../constants'
+import { cardValues } from '../constants'
 import suits from './imageConstants.jsx'
 
 
@@ -9,7 +9,7 @@ const CardButtons = ({ addCardToTrick }) => {
     // array of all possible cards that could be added to trick
     const cardButtons = [];
     for (const suit of suits) {
-        for (const value of values) {
+        for (const value of cardValues) {
             cardButtons.push({ suit, value });
         }
     }

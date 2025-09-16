@@ -3,13 +3,13 @@ import '../styles/cardImageStyle.css'
 
 const Bid = ({ bid }) => {
     // get suit and value from bid prop
-    const { suit, value } = card;
+    const { suit, value } = bid;
 
     return (
         <>
-            <div >
+            <div>
                 <p>{value}</p>
-                <img src={suit} alt="suit" />
+                <img src={suit} alt={suit} />
             </div>
         </>
     )
