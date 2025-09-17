@@ -6,7 +6,7 @@ const CardButton = ({ card, addToTrick }) => {
 
     return (
         <>
-            <button onClick={() => addToTrick(card)}>
+            <button className="card-button" onClick={() => addToTrick(card)}>
                 <Card card={card}/>
             </button>
         </>
