@@ -16,8 +16,9 @@ function App() {
   
   return (
     <>
-      <div className="card">
+      <div>
         <TrickLogger tricksPlayed={tricks} addTrick={addTrickToHand} />
+        
       </div>
     </>
   )
