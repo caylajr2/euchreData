@@ -2,13 +2,17 @@ import Card from './Card'
 import '../styles/trickStyle.css'
 import '../styles/cardImageStyle.css'
 
-const Trick = ({ cardsPlayed }) => {
+const Trick = ({ cardClass, cardsPlayed }) => {
     
     return (
         <>
             {/* displays cards in current trick using prop cardsPlayed */}
             <ul className='trickRow'>
-                {cardsPlayed.map(e => <li className="playedCard"><Card card={e}/></li>)}
+                {cardsPlayed.map(e => 
+                <li className="playedCard">
+                    <Card cardClass={cardClass} card={{suit:e.suit,value: e.value}}/>
+                </li>
+            )}
             </ul>
         </>
     )
