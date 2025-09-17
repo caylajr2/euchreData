@@ -4,9 +4,9 @@ import '../styles/cardImageStyle.css'
 
 const Trick = ({ cardClass, cardsPlayed }) => {
     
-
     return (
         <>
+            {/* displays cards in current trick using prop cardsPlayed */}
             <ul className='trickRow'>
                 {cardsPlayed.map(e => 
                 <li className="playedCard">
@@ -14,8 +14,6 @@ const Trick = ({ cardClass, cardsPlayed }) => {
                 </li>
             )}
             </ul>
-            {/* <CardButton card={{suit:'heart',value: 'A'}} addToTrick={addCardToTrick}/>
-            <CardButton card={{suit:'heart',value: 'K'}} addToTrick={addCardToTrick}/> */}
         </>
     )
 }

@@ -1,8 +1,9 @@
-import react from 'react'
 import '../styles/cardImageStyle.css'
 
 
+
 const Card = ({ cardClass, card }) => {
+
     const { suit, value } = card;
     console.log(suit);
 
