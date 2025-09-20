@@ -8,7 +8,7 @@ const CardButtons = ({ addCardToTrick }) => {
     // array of all possible cards that could be added to trick
     const cardButtons = [];
     for (const suit of suits) {
-        for (const value of cardValues) {
+        for (const value of values) {
             cardButtons.push({ suit, value });
         }
     }

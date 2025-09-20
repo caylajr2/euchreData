@@ -10,9 +10,13 @@ const BidButtons = ({ addBid }) => {
 
     const handleSubmitBid = (e) => {
         e.preventDefault();
-        addBid({ suit: selectedSuit, value: selectedValue });
-        setSelectedSuit("");
-        setSelectedValue("");
+        if (selectedSuit === "" || selectedValue === "") {
+            alert("Must select suit and value");
+        } else {
+            addBid({ suit: selectedSuit, value: selectedValue });
+            setSelectedSuit("");
+            setSelectedValue("");
+        }
     }
 
     return (
