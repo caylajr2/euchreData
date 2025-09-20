@@ -35,7 +35,7 @@ function App() {
       <div>
         <BidLogger bids={bids} addBid={addBidToHand} />
         {/* TrickLogger will be within Hand component, updates tricks with each full trick*/}
-        {/* <TrickLogger tricksPlayed={tricks} addTrick={addTrickToHand} /> */}
+        <TrickLogger tricksPlayed={tricks} addTrick={addTrickToHand} />
       </div>
     </>
   )

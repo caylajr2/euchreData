@@ -10,10 +10,13 @@ import jack from '../assets/J-black.png'
 import ten from '../assets/ten-black.png'
 import nine from '../assets/nine-black.png'
 
+import hi from '../assets/hi.png'
+import lo from '../assets/lo.png'
+
 // export const suits = [ spade, heart, diamond, club ];
 // export const values = [ ace, king, queen, jack, ten, nine ];
 
-export const suits = [
+export const cardSuits = [
     {
         name: 'spade',
         image: spade
@@ -32,7 +35,9 @@ export const suits = [
         }
     ];
 
-export const values = [
+
+
+export const cardValues = [
     {
         name: 'Ace',
         image: ace
@@ -56,5 +61,17 @@ export const values = [
     {
         name: '9',
         image: nine
+    }
+];
+
+export const biddingSuits = [
+    ...cardSuits,
+    {
+        name: 'high',
+        image: hi
+    },
+    {
+        name: 'low',
+        image: lo
     }
 ];

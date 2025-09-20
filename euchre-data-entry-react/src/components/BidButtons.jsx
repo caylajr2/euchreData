@@ -1,8 +1,9 @@
 import { useState } from "react";
-// import suits from './imageConstants.jsx'
+import {biddingSuits} from './imageConstants.jsx'
+import '../styles/bidButtonStyle.css'
 
 const bidValues = [1, 2, 3, 4, 5, 6, 7];
-const suits = ['spade', 'heart', 'diamond', 'club', 'high', 'low']
+// const suits = ['spade', 'heart', 'diamond', 'club', 'high', 'low']
 
 const BidButtons = ({ addBid }) => {
     const [selectedSuit, setSelectedSuit] = useState("");
@@ -17,21 +18,22 @@ const BidButtons = ({ addBid }) => {
 
     return (
         <form onSubmit={handleSubmitBid}>
-            <div style={{ display: "flex", gap: "1rem" }}>
-                {suits.map((url, idx) => (
-                <label key={idx}>
-                    <input type="radio" name="choice" value={url} checked={selectedSuit === url} onChange={(e) => setSelectedSuit(e.target.value)} style={{ display: "none" }} />
-                    <img
-                    src={url}
-                    alt={`${url}`}
-                    style={{
-                        border: selectedSuit === url ? "3px solid blue" : "3px solid transparent",
-                        borderRadius: "8px",
-                        cursor: "pointer",
-                        width: "100px",
-                        height: "100px",
-                    }}
-                    />
+            <div className="bid-buttons-section">
+                {biddingSuits.map((suit, idx) => (
+                    <label className="bid-button-label" key={idx}>
+                        <input 
+                            type="radio" 
+                            name="choice" 
+                            value={suit.name} 
+                            checked={selectedSuit === suit.name} 
+                            onChange={(e) => setSelectedSuit(e.target.value)} 
+                            className="bid-button-radio" 
+                        />
+                        <img
+                            className= "bid-suit-image"
+                            src={suit.image}
+                            alt={`${suit.name}`}
+                        />
                 </label>
                 ))}
             </div>

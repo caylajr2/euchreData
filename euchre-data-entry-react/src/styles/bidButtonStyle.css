@@ -1,0 +1,37 @@
+img.bid-suit-image {
+    height: 50px;
+    border-radius: "8px";
+    cursor: "pointer";
+    padding: 10px;
+    
+}
+
+input[type="radio"].bid-button-radio {
+    display: none;
+}
+
+input[type="radio"] + img {
+    background-color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+input[type="radio"]:checked + img {
+    /* border: solid 3px rgb(255, 0, 0); */
+    background-color: lightblue;
+}
+
+div.bid-buttons-section {
+    display: "flex";
+
+    /* border: solid 1px black; */
+    height: 60px;
+}
+
+.bid-button {
+    background-color: white;
+}
+
