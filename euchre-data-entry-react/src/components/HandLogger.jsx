@@ -4,7 +4,7 @@ import BidLogger from './BidLogger'
 import TrickLogger from './TrickLogger'
 
 
-const HandLogger = () => {
+const HandLogger = ({addHandToFile}) => {
     // tricks played in hand, will be moved to hand component and be submitted from there
     const [tricks, setTricks] = useState([]);
     
@@ -30,12 +30,28 @@ const HandLogger = () => {
         console.log(bids)
     }
 
+    const handleAddHand = (bids, tricks) => {
+        if (bids.length !== 6 | tricks.length !== 8) {
+            alert("incorrect number of bids or tricks in hand")
+        } else {
+            const simpleTricks = tricks.map(t => t.map(c => {
+                const card = { suit: c.suit.name, value: c.value.name };
+                return card;
+            }))
+            
+            addHandToFile({bids, simpleTricks})
+        }
+    }
+
     return (
         <>
             {/* BidLogger updates the bids array */}
+            <h2>Bids</h2>
             <BidLogger bids={bids} addBid={addBidToHand} />
             {/* TrickLogger updates tricks array with each full trick */}
+            <h2>Tricks</h2>
             <TrickLogger tricksPlayed={tricks} addTrick={addTrickToHand} />
+            <button type='submit' onClick={() => handleAddHand(bids, tricks)} >Submit Hand</button>
         </>
     )
 }
