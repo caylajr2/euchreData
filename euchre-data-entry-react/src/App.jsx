@@ -16,6 +16,7 @@ function App() {
   return (
     <>
       <div>
+
         <h1>Log your hand below</h1>
         <HandLogger addHandToFile={ addHandToFile } />
       </div>
