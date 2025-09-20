@@ -3,9 +3,6 @@ import Bid from './Bid'
 import BidButtons from './BidButtons'
 
 const BidLogger = ({ bids, addBid }) => {
-    // get suit and value from bid prop
-
-
 
     return (
         <>
