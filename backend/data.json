@@ -1,0 +1,716 @@
+[
+  {
+    "bids": [
+      {
+        "suit": "spade",
+        "value": "1"
+      },
+      {
+        "suit": "heart",
+        "value": "2"
+      },
+      {
+        "suit": "diamond",
+        "value": "3"
+      },
+      {
+        "suit": "club",
+        "value": "4"
+      },
+      {
+        "suit": "high",
+        "value": "5"
+      },
+      {
+        "suit": "low",
+        "value": "6"
+      }
+    ],
+    "tricks": [
+      [
+        {
+          "suit": "spade",
+          "value": "King"
+        },
+        {
+          "suit": "spade",
+          "value": "King"
+        },
+        {
+          "suit": "spade",
+          "value": "King"
+        },
+        {
+          "suit": "spade",
+          "value": "King"
+        },
+        {
+          "suit": "spade",
+          "value": "King"
+        },
+        {
+          "suit": "spade",
+          "value": "King"
+        }
+      ],
+      [
+        {
+          "suit": "spade",
+          "value": "Ace"
+        },
+        {
+          "suit": "spade",
+          "value": "Ace"
+        },
+        {
+          "suit": "spade",
+          "value": "Ace"
+        },
+        {
+          "suit": "spade",
+          "value": "Ace"
+        },
+        {
+          "suit": "spade",
+          "value": "Ace"
+        },
+        {
+          "suit": "spade",
+          "value": "Ace"
+        }
+      ],
+      [
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        }
+      ],
+      [
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        }
+      ],
+      [
+        {
+          "suit": "spade",
+          "value": "10"
+        },
+        {
+          "suit": "spade",
+          "value": "10"
+        },
+        {
+          "suit": "spade",
+          "value": "10"
+        },
+        {
+          "suit": "spade",
+          "value": "10"
+        },
+        {
+          "suit": "spade",
+          "value": "10"
+        },
+        {
+          "suit": "spade",
+          "value": "10"
+        }
+      ],
+      [
+        {
+          "suit": "spade",
+          "value": "9"
+        },
+        {
+          "suit": "spade",
+          "value": "9"
+        },
+        {
+          "suit": "spade",
+          "value": "9"
+        },
+        {
+          "suit": "spade",
+          "value": "9"
+        },
+        {
+          "suit": "spade",
+          "value": "9"
+        },
+        {
+          "suit": "spade",
+          "value": "9"
+        }
+      ],
+      [
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        }
+      ],
+      [
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        }
+      ]
+    ]
+  },
+  {
+    "bids": [
+      {
+        "suit": "spade",
+        "value": "1"
+      },
+      {
+        "suit": "heart",
+        "value": "2"
+      },
+      {
+        "suit": "diamond",
+        "value": "3"
+      },
+      {
+        "suit": "club",
+        "value": "4"
+      },
+      {
+        "suit": "high",
+        "value": "5"
+      },
+      {
+        "suit": "low",
+        "value": "6"
+      }
+    ],
+    "tricks": [
+      [
+        {
+          "suit": "spade",
+          "value": "King"
+        },
+        {
+          "suit": "spade",
+          "value": "King"
+        },
+        {
+          "suit": "spade",
+          "value": "King"
+        },
+        {
+          "suit": "spade",
+          "value": "King"
+        },
+        {
+          "suit": "spade",
+          "value": "King"
+        },
+        {
+          "suit": "spade",
+          "value": "King"
+        }
+      ],
+      [
+        {
+          "suit": "spade",
+          "value": "Ace"
+        },
+        {
+          "suit": "spade",
+          "value": "Ace"
+        },
+        {
+          "suit": "spade",
+          "value": "Ace"
+        },
+        {
+          "suit": "spade",
+          "value": "Ace"
+        },
+        {
+          "suit": "spade",
+          "value": "Ace"
+        },
+        {
+          "suit": "spade",
+          "value": "Ace"
+        }
+      ],
+      [
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        }
+      ],
+      [
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        }
+      ],
+      [
+        {
+          "suit": "spade",
+          "value": "10"
+        },
+        {
+          "suit": "spade",
+          "value": "10"
+        },
+        {
+          "suit": "spade",
+          "value": "10"
+        },
+        {
+          "suit": "spade",
+          "value": "10"
+        },
+        {
+          "suit": "spade",
+          "value": "10"
+        },
+        {
+          "suit": "spade",
+          "value": "10"
+        }
+      ],
+      [
+        {
+          "suit": "spade",
+          "value": "9"
+        },
+        {
+          "suit": "spade",
+          "value": "9"
+        },
+        {
+          "suit": "spade",
+          "value": "9"
+        },
+        {
+          "suit": "spade",
+          "value": "9"
+        },
+        {
+          "suit": "spade",
+          "value": "9"
+        },
+        {
+          "suit": "spade",
+          "value": "9"
+        }
+      ],
+      [
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        }
+      ],
+      [
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        }
+      ]
+    ]
+  },
+  {
+    "bids": [
+      {
+        "suit": "spade",
+        "value": "1"
+      },
+      {
+        "suit": "heart",
+        "value": "2"
+      },
+      {
+        "suit": "diamond",
+        "value": "3"
+      },
+      {
+        "suit": "club",
+        "value": "4"
+      },
+      {
+        "suit": "high",
+        "value": "5"
+      },
+      {
+        "suit": "low",
+        "value": "6"
+      }
+    ],
+    "tricks": [
+      [
+        {
+          "suit": "spade",
+          "value": "King"
+        },
+        {
+          "suit": "spade",
+          "value": "King"
+        },
+        {
+          "suit": "spade",
+          "value": "King"
+        },
+        {
+          "suit": "spade",
+          "value": "King"
+        },
+        {
+          "suit": "spade",
+          "value": "King"
+        },
+        {
+          "suit": "spade",
+          "value": "King"
+        }
+      ],
+      [
+        {
+          "suit": "spade",
+          "value": "Ace"
+        },
+        {
+          "suit": "spade",
+          "value": "Ace"
+        },
+        {
+          "suit": "spade",
+          "value": "Ace"
+        },
+        {
+          "suit": "spade",
+          "value": "Ace"
+        },
+        {
+          "suit": "spade",
+          "value": "Ace"
+        },
+        {
+          "suit": "spade",
+          "value": "Ace"
+        }
+      ],
+      [
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        }
+      ],
+      [
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        }
+      ],
+      [
+        {
+          "suit": "spade",
+          "value": "10"
+        },
+        {
+          "suit": "spade",
+          "value": "10"
+        },
+        {
+          "suit": "spade",
+          "value": "10"
+        },
+        {
+          "suit": "spade",
+          "value": "10"
+        },
+        {
+          "suit": "spade",
+          "value": "10"
+        },
+        {
+          "suit": "spade",
+          "value": "10"
+        }
+      ],
+      [
+        {
+          "suit": "spade",
+          "value": "9"
+        },
+        {
+          "suit": "spade",
+          "value": "9"
+        },
+        {
+          "suit": "spade",
+          "value": "9"
+        },
+        {
+          "suit": "spade",
+          "value": "9"
+        },
+        {
+          "suit": "spade",
+          "value": "9"
+        },
+        {
+          "suit": "spade",
+          "value": "9"
+        }
+      ],
+      [
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        }
+      ],
+      [
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        }
+      ]
+    ]
+  }
+]

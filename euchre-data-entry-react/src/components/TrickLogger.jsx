@@ -25,6 +25,8 @@ const TrickLogger = ({ tricksPlayed, addTrick }) => {
     const handleAddTrick = (trick) => {
         if (trick.length !== 6) {
             alert("Invalid trick: there are not 6 cards");
+        } else if (tricksPlayed.length === 8) {
+            alert("Trick is full")
         } else {
             addTrick(trick);
             setCardsPlayed([]);
