@@ -11,8 +11,24 @@ app.use(cors({ origin: "http://localhost:5173" }));
 app.use(express.json());
 
 app.post("/save", (req, res) => {
-  const data = req.body;
-  fs.writeFileSync("data.json", JSON.stringify(data, null, 2));
+    let data = [];
+
+  // Read existing data if the file already exists
+  if (fs.existsSync("data.json")) {
+    try {
+      const fileContent = fs.readFileSync("data.json", "utf8");
+      if (fileContent.trim()) {
+        data = JSON.parse(fileContent);
+      }
+    } catch (err) {
+      console.error("Error reading/parsing file:", err);
+    }
+  }
+  // Add the new entry
+  data.push(req.body);
+
+  // Write back formatted JSON
+  fs.writeFileSync("data.json", JSON.stringify(data, null, 2), "utf8");
   res.json({ message: "Data saved to data.json" });
 });
 

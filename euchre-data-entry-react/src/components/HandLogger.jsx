@@ -39,7 +39,7 @@ const HandLogger = ({addHandToFile}) => {
                 return card;
             }))
             
-            addHandToFile({bids, simpleTricks})
+            addHandToFile({bids, tricks: simpleTricks})
         }
     }
 
