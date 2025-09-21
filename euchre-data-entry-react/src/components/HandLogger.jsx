@@ -24,17 +24,27 @@ const HandLogger = ({ addHandToFile }) => {
 
     // function to add trick to array of logged tricks, will be moved to hand component
     const addTrickToHand = trick => {
-        const newDeck = deck;
-
         setTricks(prev => [...prev, trick]);
+    }
+
+    const removeTrickFromHand = () => {
+        if (tricks.length === 0) {
+            alert('there are no tricks to remove yet');
+        } else {
+            const prevTrick = tricks[tricks.length - 1];
+            for (const card of prevTrick) {
+                addCardToDeck(card.suit.name, card.value.name);
+            }
+            setTricks(prev => prev.slice(0,-1));
+        }
     }
 
     // function to add bid to array of logged bids
     const addBidToHand = (newSuit, newValue) => {
         if (bids.length >= 6) {
-        alert("Can only have six bids in a hand");
+            alert("Can only have six bids in a hand");
         } else if (bids.length !== 0 && newValue <= bids.at(-1).value.value) {
-        alert("Bid must be larger than previous bid");
+            alert("Bid must be larger than previous bid");
         } else {
             const suit = biddingSuits.find(e => e.name === newSuit);
             const value = biddingValues.find(e => e.name === newValue);
@@ -45,9 +55,9 @@ const HandLogger = ({ addHandToFile }) => {
 
     const removeBidFromHand = () => {
         if (bids.length <= 0) {
-        alert("Can only have six bids in a hand");
+            alert("Can only have six bids in a hand");
         } else {
-        setBids(prev => prev.slice(0,-1));
+            setBids(prev => prev.slice(0,-1));
         }
     }
 
@@ -59,8 +69,13 @@ const HandLogger = ({ addHandToFile }) => {
                 const card = { suit: c.suit.name, value: c.value.name };
                 return card;
             }))
+
+            const simpleBids = bids.map(b => { return { suit: b.suit.name, value: b.value.name } })
             
-            addHandToFile({bids, tricks: simpleTricks})
+            addHandToFile({ bids: simpleBids, tricks: simpleTricks })
+            setBids([])
+            setTricks([])
+            setDeck(cards)
         }
     }
 
@@ -97,7 +112,7 @@ const HandLogger = ({ addHandToFile }) => {
             <BidLogger bids={bids} addBid={addBidToHand} removeBid={removeBidFromHand} />
             {/* TrickLogger updates tricks array with each full trick */}
             <h2>Tricks</h2>
-            <TrickLogger tricksPlayed={tricks} addTrick={addTrickToHand} deck={deck} addCardToDeck={addCardToDeck} removeCardFromDeck={removeCardFromDeck} />
+            <TrickLogger tricksPlayed={tricks} addTrick={addTrickToHand} deck={deck} addCardToDeck={addCardToDeck} removeCardFromDeck={removeCardFromDeck} removeTrickFromHand={removeTrickFromHand} />
             <button type='submit' onClick={() => handleAddHand(bids, tricks)} >Submit Hand</button>
         </>
     )
