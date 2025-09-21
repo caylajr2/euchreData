@@ -3,6 +3,7 @@ import Card from './Card'
 import CardButtons from './CardButtons'
 import Trick from './Trick'
 import '../styles/trickStyle.css'
+import undoIcon from '../assets/undo.png'
 
 const TrickLogger = ({ tricksPlayed, addTrick, deck, addCardToDeck, removeCardFromDeck }) => {
     // keeps track of cards played in current open trick
@@ -67,10 +68,15 @@ const TrickLogger = ({ tricksPlayed, addTrick, deck, addCardToDeck, removeCardFr
                     )}
                 </ul>
             </div>
-            <div id='current-trick-container'>
+            <div id='trick-data-entry-container'>
                 {/* displays cards played on current trick */}
-                <Trick trickClass="current" cardsPlayed={cardsPlayed} />
-                <button onClick={() => removeCardFromTrick()}>Remove last card</button>
+                <div id="current-trick">
+                    <Trick trickClass="current" cardsPlayed={cardsPlayed} />
+                    <button className="small-square-button" onClick={() => removeCardFromTrick()}>
+                        {/* <img src="https://img.icons8.com/ios-glyphs/30/000000/undo.png" alt="undo icon"/> */}
+                        <img src={undoIcon} alt="undo icon"/>
+                    </button>
+                </div>
                 {/* adds trick to hand */}
                 <button onClick={() => handleAddTrick(cardsPlayed)}>Log Trick</button>
                 {/* component with different buttons for adding cards to a trick */}
