@@ -2,8 +2,7 @@ import { useState } from "react";
 import {biddingSuits} from './imageConstants.jsx'
 import '../styles/bidButtonStyle.css'
 
-const bidValues = [1, 2, 3, 4, 5, 6, 7];
-// const suits = ['spade', 'heart', 'diamond', 'club', 'high', 'low']
+const bidValues = [1, 2, 3, 4, 5, 6, 7, 8];
 
 const BidButtons = ({ addBid }) => {
     const [selectedSuit, setSelectedSuit] = useState("");
