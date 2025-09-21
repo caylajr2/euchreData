@@ -74,7 +74,7 @@ const TrickLogger = ({ tricksPlayed, addTrick, deck, addCardToDeck, removeCardFr
                 {/* adds trick to hand */}
                 <button onClick={() => handleAddTrick(cardsPlayed)}>Log Trick</button>
                 {/* component with different buttons for adding cards to a trick */}
-                <CardButtons addCardToTrick={addCardToTrick} />
+                <CardButtons deck={deck} addCardToTrick={addCardToTrick} />
             </div>
         </div>
 
