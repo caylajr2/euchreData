@@ -13,8 +13,57 @@ import nine from '../assets/nine-black.png'
 import hi from '../assets/hi.png'
 import lo from '../assets/lo.png'
 
-// export const suits = [ spade, heart, diamond, club ];
-// export const values = [ ace, king, queen, jack, ten, nine ];
+import one from '../assets/1.png'
+import two from '../assets/2.png'
+import three from '../assets/3.png'
+import four from '../assets/4.png'
+import five from '../assets/5.png'
+import six from '../assets/6.png'   
+import seven from '../assets/7.png'
+import eight from '../assets/8.png'
+
+export const bidValues = [
+    {
+        name: '1',
+        image: one,
+        value: 1
+    },
+    {
+        name: '2',
+        image: two,
+        value: 2        
+    },
+    {
+        name: '3',
+        image: three,   
+        value: 3
+    },
+    {
+        name: '4',
+        image: four,
+        value: 4
+    },
+    {
+        name: '5',
+        image: five,
+        value: 5
+    },
+    {
+        name: '6',
+        image: six,
+        value: 6
+    },
+    {
+        name: '7',
+        image: seven,
+        value: 7
+    },
+    {
+        name: '8',
+        image: eight,
+        value: 8
+    }
+]
 
 export const cardSuits = [
     {

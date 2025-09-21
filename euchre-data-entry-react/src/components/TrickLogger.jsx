@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Card from './Card'
 import CardButtons from './CardButtons'
 import Trick from './Trick'
+import '../styles/trickStyle.css'
 
 const TrickLogger = ({ tricksPlayed, addTrick, deck, addCardToDeck, removeCardFromDeck }) => {
     // keeps track of cards played in current open trick
@@ -47,8 +48,6 @@ const TrickLogger = ({ tricksPlayed, addTrick, deck, addCardToDeck, removeCardFr
     const handleAddTrick = (trick) => {
         if (trick.length !== 6) {
             alert("Invalid trick: there are not 6 cards");
-        } else if (tricksPlayed.length === 8) {
-            alert("Trick is full")
         } else {
             addTrick(trick);
             setCardsPlayed([]);
@@ -56,24 +55,29 @@ const TrickLogger = ({ tricksPlayed, addTrick, deck, addCardToDeck, removeCardFr
     }
 
     return (
-        <>
-            {/* displays previous tricks in the hand */}
-            <ul>
-                {tricksPlayed.map((e, index) => 
-                    <li>
-                        <p>Trick #{index+1}</p>
-                        <Trick cardClass="logged-trick" cardsPlayed={e}/>
-                    </li>
-                )}
-            </ul>
-            {/* displays cards played on current trick */}
-            <Trick cardsPlayed={cardsPlayed} removeCardFromTrick={removeCardFromTrick} />
-            <button onClick={() => removeCardFromTrick()}>Remove last card</button>
-            {/* adds trick to hand */}
-            <button onClick={() => handleAddTrick(cardsPlayed)}>Log Trick</button>
-            {/* component with different buttons for adding cards to a trick */}
-            <CardButtons addCardToTrick={addCardToTrick} />
-        </>
+        <div id='trick-logger-container'>
+            <div id="previous-tricks-comtainer">
+                {/* displays previous tricks in the hand */}
+                <ul className='previous-tricks'>
+                    {tricksPlayed.map((e, index) => 
+                        <li className="previous-trick-row" key={index}>
+                            <p className="trick-label">Trick #{index+1}</p>
+                            <Trick trickClass="logged" cardClass="logged-trick" cardsPlayed={e}/>
+                        </li>
+                    )}
+                </ul>
+            </div>
+            <div id='current-trick-container'>
+                {/* displays cards played on current trick */}
+                <Trick trickClass="current" cardsPlayed={cardsPlayed} />
+                <button onClick={() => removeCardFromTrick()}>Remove last card</button>
+                {/* adds trick to hand */}
+                <button onClick={() => handleAddTrick(cardsPlayed)}>Log Trick</button>
+                {/* component with different buttons for adding cards to a trick */}
+                <CardButtons addCardToTrick={addCardToTrick} />
+            </div>
+        </div>
+
     )
 }
 

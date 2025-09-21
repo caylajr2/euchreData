@@ -1,17 +1,78 @@
+#trick-logger-container {
+  display:flex;
+  padding: 20px;
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  /* background-color: #699279; */
+  
+}
+
+#current-trick-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 5rem;
+}
+
+p.trick-label {
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  margin: 5px;
+}
+
+.previous-tricks {
+  display: flex;
+  flex-direction: column;
+  background-color: #699279;
+  min-width: 420px;
+  min-height: 800px;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid #53735F 1px;
+
+
+  /* margin-bottom: .15rem; */
+  /*max-height: 300px;     /* limit height */
+  /*overflow-y: auto;      /* enable vertical scrolling if needed */
+}
+
 ul{
   list-style: none;      /* remove default bullets */
   padding: 0;
   margin: 0;
   display: grid;         /* enable grid layout */
-  grid-template-columns: repeat(6, 1fr); /* 3 equal columns */
-  gap: .5rem;             /* spacing between items */
+  grid-template-columns: repeat(6, 1fr); /* 6 equal columns */
+  /*gap: .15rem;             /* spacing between items */
 
 }
 
 ul.trickRow {
-  border: solid black 2px;
+  /* border: solid #53735F 2px; */
   border-radius: 10px;
-  background-color: #486c56;
+  /* background-color: #486c56; */
+  /* background-color: #CBB592; */
+
+}
+
+.previous-trick-row {
+  display: flex;
+  align-items:center;
+  padding: .25rem;
+  margin:3px;
+  /* background-color: #CBB592; */
+  border-radius: 10px;
+  /* border: solid #53735F 1px; */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+ul.trickRow.current {
+  align-items: center;
+  min-height:120px;
+  min-width: 85%;
+  background-color: #699279;
+  border: solid #53735F 1px;
 }
 
 li {

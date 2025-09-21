@@ -7,7 +7,11 @@ const BidLogger = ({ bids, addBid }) => {
     return (
         <>
             <ul>
-                {bids.map(e => <li><Bid bid={e} /></li>)}
+                {bids.map(e => 
+                    <li>
+                        <Bid bid={e} />
+                    </li>
+                )}
             </ul>
             <BidButtons addBid={ addBid } />
         </>
