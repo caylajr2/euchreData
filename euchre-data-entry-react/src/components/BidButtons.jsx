@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {biddingSuits, bidValues} from './imageConstants.jsx'
+import {biddingSuits, biddingValues} from './imageConstants.jsx'
 import '../styles/bidButtonStyle.css'
 
 const BidButtons = ({ addBid }) => {
@@ -11,7 +11,7 @@ const BidButtons = ({ addBid }) => {
         if (selectedSuit === "" || selectedValue === "") {
             alert("Must select suit and value");
         } else {
-            addBid({ suit: selectedSuit, value: selectedValue });
+            addBid(selectedSuit, selectedValue );
             setSelectedSuit("");
             setSelectedValue("");
         }
@@ -21,7 +21,7 @@ const BidButtons = ({ addBid }) => {
         <form onSubmit={handleSubmitBid}>
             
             <div className="bid-buttons-section">
-                {bidValues.map((value, idx) => (
+                {biddingValues.map((value, idx) => (
                 <label key={idx}>
                     <input 
                         type="radio" 
@@ -36,11 +36,9 @@ const BidButtons = ({ addBid }) => {
                         src={value.image}
                         alt={`${value.name}`}
                     />
-                    {/* <p>{ value }</p> */}
                 </label>
                 ))}
             </div>
-            <p>Selected Value: {selectedValue}</p>
             <div className="bid-buttons-section">
                 {biddingSuits.map((suit, idx) => (
                     <label className="bid-button-label" key={idx}>
@@ -60,7 +58,6 @@ const BidButtons = ({ addBid }) => {
                 </label>
                 ))}
             </div>
-            <p>Selected Suit: {selectedSuit}</p>
 
             <button type="submit">Add Bid</button>
         </form>

@@ -6,23 +6,23 @@
         "value": "1"
       },
       {
-        "suit": "spade",
+        "suit": "heart",
         "value": "2"
       },
       {
-        "suit": "spade",
+        "suit": "diamond",
         "value": "3"
       },
       {
-        "suit": "heart",
+        "suit": "club",
         "value": "4"
       },
       {
-        "suit": "diamond",
+        "suit": "high",
         "value": "5"
       },
       {
-        "suit": "club",
+        "suit": "high",
         "value": "6"
       }
     ],
@@ -30,84 +30,6 @@
       [
         {
           "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        }
-      ],
-      [
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        }
-      ],
-      [
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        }
-      ],
-      [
-        {
-          "suit": "spade",
           "value": "King"
         },
         {
@@ -116,63 +38,11 @@
         },
         {
           "suit": "spade",
-          "value": "King"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "King"
-        },
-        {
-          "suit": "spade",
-          "value": "King"
-        },
-        {
-          "suit": "spade",
-          "value": "King"
-        }
-      ],
-      [
-        {
-          "suit": "spade",
-          "value": "King"
-        },
-        {
-          "suit": "spade",
-          "value": "King"
-        },
-        {
-          "suit": "spade",
-          "value": "King"
-        },
-        {
-          "suit": "spade",
-          "value": "King"
-        },
-        {
-          "suit": "spade",
-          "value": "King"
-        },
-        {
-          "suit": "spade",
-          "value": "King"
-        }
-      ],
-      [
-        {
-          "suit": "spade",
-          "value": "Queen"
-        },
-        {
-          "suit": "spade",
-          "value": "Queen"
-        },
-        {
-          "suit": "spade",
-          "value": "Queen"
-        },
-        {
-          "suit": "spade",
-          "value": "Queen"
+          "value": "Ace"
         },
         {
           "suit": "spade",
@@ -186,529 +56,183 @@
       [
         {
           "suit": "spade",
-          "value": "Queen"
+          "value": "Jack"
         },
         {
           "suit": "spade",
-          "value": "Queen"
+          "value": "Jack"
         },
         {
           "suit": "spade",
-          "value": "Queen"
+          "value": "10"
         },
         {
           "suit": "spade",
-          "value": "Queen"
+          "value": "10"
         },
         {
           "suit": "spade",
-          "value": "Queen"
+          "value": "9"
         },
         {
           "suit": "spade",
+          "value": "9"
+        }
+      ],
+      [
+        {
+          "suit": "heart",
+          "value": "Ace"
+        },
+        {
+          "suit": "heart",
+          "value": "Ace"
+        },
+        {
+          "suit": "heart",
+          "value": "King"
+        },
+        {
+          "suit": "heart",
+          "value": "King"
+        },
+        {
+          "suit": "heart",
+          "value": "Queen"
+        },
+        {
+          "suit": "heart",
           "value": "Queen"
         }
       ],
       [
         {
-          "suit": "spade",
-          "value": "Queen"
+          "suit": "heart",
+          "value": "Jack"
         },
         {
-          "suit": "spade",
-          "value": "Queen"
+          "suit": "heart",
+          "value": "Jack"
         },
         {
-          "suit": "spade",
-          "value": "Queen"
+          "suit": "heart",
+          "value": "10"
         },
         {
-          "suit": "spade",
-          "value": "Queen"
+          "suit": "heart",
+          "value": "10"
         },
         {
-          "suit": "spade",
-          "value": "Queen"
+          "suit": "heart",
+          "value": "9"
         },
         {
-          "suit": "spade",
-          "value": "Queen"
-        }
-      ]
-    ]
-  },
-  {
-    "bids": [
-      {
-        "suit": "spade",
-        "value": "1"
-      },
-      {
-        "suit": "spade",
-        "value": "2"
-      },
-      {
-        "suit": "spade",
-        "value": "3"
-      },
-      {
-        "suit": "heart",
-        "value": "4"
-      },
-      {
-        "suit": "diamond",
-        "value": "5"
-      },
-      {
-        "suit": "club",
-        "value": "6"
-      }
-    ],
-    "tricks": [
-      [
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
+          "suit": "heart",
+          "value": "9"
         }
       ],
       [
         {
-          "suit": "spade",
+          "suit": "diamond",
           "value": "Ace"
         },
         {
-          "suit": "spade",
+          "suit": "diamond",
           "value": "Ace"
         },
         {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        }
-      ],
-      [
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        }
-      ],
-      [
-        {
-          "suit": "spade",
+          "suit": "diamond",
           "value": "King"
         },
         {
-          "suit": "spade",
+          "suit": "diamond",
           "value": "King"
         },
         {
-          "suit": "spade",
-          "value": "King"
-        },
-        {
-          "suit": "spade",
-          "value": "King"
-        },
-        {
-          "suit": "spade",
-          "value": "King"
-        },
-        {
-          "suit": "spade",
-          "value": "King"
-        }
-      ],
-      [
-        {
-          "suit": "spade",
-          "value": "King"
-        },
-        {
-          "suit": "spade",
-          "value": "King"
-        },
-        {
-          "suit": "spade",
-          "value": "King"
-        },
-        {
-          "suit": "spade",
-          "value": "King"
-        },
-        {
-          "suit": "spade",
-          "value": "King"
-        },
-        {
-          "suit": "spade",
-          "value": "King"
-        }
-      ],
-      [
-        {
-          "suit": "spade",
+          "suit": "diamond",
           "value": "Queen"
         },
         {
-          "suit": "spade",
-          "value": "Queen"
-        },
-        {
-          "suit": "spade",
-          "value": "Queen"
-        },
-        {
-          "suit": "spade",
-          "value": "Queen"
-        },
-        {
-          "suit": "spade",
-          "value": "Queen"
-        },
-        {
-          "suit": "spade",
+          "suit": "diamond",
           "value": "Queen"
         }
       ],
       [
         {
-          "suit": "spade",
+          "suit": "diamond",
+          "value": "Jack"
+        },
+        {
+          "suit": "diamond",
+          "value": "Jack"
+        },
+        {
+          "suit": "diamond",
+          "value": "10"
+        },
+        {
+          "suit": "diamond",
+          "value": "10"
+        },
+        {
+          "suit": "diamond",
+          "value": "9"
+        },
+        {
+          "suit": "diamond",
+          "value": "9"
+        }
+      ],
+      [
+        {
+          "suit": "club",
+          "value": "Ace"
+        },
+        {
+          "suit": "club",
+          "value": "Ace"
+        },
+        {
+          "suit": "club",
+          "value": "King"
+        },
+        {
+          "suit": "club",
+          "value": "King"
+        },
+        {
+          "suit": "club",
           "value": "Queen"
         },
         {
-          "suit": "spade",
-          "value": "Queen"
-        },
-        {
-          "suit": "spade",
-          "value": "Queen"
-        },
-        {
-          "suit": "spade",
-          "value": "Queen"
-        },
-        {
-          "suit": "spade",
-          "value": "Queen"
-        },
-        {
-          "suit": "spade",
+          "suit": "club",
           "value": "Queen"
         }
       ],
       [
         {
-          "suit": "spade",
-          "value": "Queen"
+          "suit": "club",
+          "value": "Jack"
         },
         {
-          "suit": "spade",
-          "value": "Queen"
+          "suit": "club",
+          "value": "Jack"
         },
         {
-          "suit": "spade",
-          "value": "Queen"
+          "suit": "club",
+          "value": "10"
         },
         {
-          "suit": "spade",
-          "value": "Queen"
+          "suit": "club",
+          "value": "10"
         },
         {
-          "suit": "spade",
-          "value": "Queen"
+          "suit": "club",
+          "value": "9"
         },
         {
-          "suit": "spade",
-          "value": "Queen"
-        }
-      ]
-    ]
-  },
-  {
-    "bids": [
-      {
-        "suit": "spade",
-        "value": "1"
-      },
-      {
-        "suit": "spade",
-        "value": "2"
-      },
-      {
-        "suit": "spade",
-        "value": "3"
-      },
-      {
-        "suit": "heart",
-        "value": "4"
-      },
-      {
-        "suit": "diamond",
-        "value": "5"
-      },
-      {
-        "suit": "club",
-        "value": "6"
-      }
-    ],
-    "tricks": [
-      [
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        }
-      ],
-      [
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        }
-      ],
-      [
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        }
-      ],
-      [
-        {
-          "suit": "spade",
-          "value": "King"
-        },
-        {
-          "suit": "spade",
-          "value": "King"
-        },
-        {
-          "suit": "spade",
-          "value": "King"
-        },
-        {
-          "suit": "spade",
-          "value": "King"
-        },
-        {
-          "suit": "spade",
-          "value": "King"
-        },
-        {
-          "suit": "spade",
-          "value": "King"
-        }
-      ],
-      [
-        {
-          "suit": "spade",
-          "value": "King"
-        },
-        {
-          "suit": "spade",
-          "value": "King"
-        },
-        {
-          "suit": "spade",
-          "value": "King"
-        },
-        {
-          "suit": "spade",
-          "value": "King"
-        },
-        {
-          "suit": "spade",
-          "value": "King"
-        },
-        {
-          "suit": "spade",
-          "value": "King"
-        }
-      ],
-      [
-        {
-          "suit": "spade",
-          "value": "Queen"
-        },
-        {
-          "suit": "spade",
-          "value": "Queen"
-        },
-        {
-          "suit": "spade",
-          "value": "Queen"
-        },
-        {
-          "suit": "spade",
-          "value": "Queen"
-        },
-        {
-          "suit": "spade",
-          "value": "Queen"
-        },
-        {
-          "suit": "spade",
-          "value": "Queen"
-        }
-      ],
-      [
-        {
-          "suit": "spade",
-          "value": "Queen"
-        },
-        {
-          "suit": "spade",
-          "value": "Queen"
-        },
-        {
-          "suit": "spade",
-          "value": "Queen"
-        },
-        {
-          "suit": "spade",
-          "value": "Queen"
-        },
-        {
-          "suit": "spade",
-          "value": "Queen"
-        },
-        {
-          "suit": "spade",
-          "value": "Queen"
-        }
-      ],
-      [
-        {
-          "suit": "spade",
-          "value": "Queen"
-        },
-        {
-          "suit": "spade",
-          "value": "Queen"
-        },
-        {
-          "suit": "spade",
-          "value": "Queen"
-        },
-        {
-          "suit": "spade",
-          "value": "Queen"
-        },
-        {
-          "suit": "spade",
-          "value": "Queen"
-        },
-        {
-          "suit": "spade",
-          "value": "Queen"
+          "suit": "club",
+          "value": "9"
         }
       ]
     ]
