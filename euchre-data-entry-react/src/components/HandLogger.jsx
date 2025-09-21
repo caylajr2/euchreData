@@ -54,36 +54,28 @@ const HandLogger = ({ addHandToFile }) => {
     }
 
     const addCardToDeck = (suit, value) => {
-        if (deck[suit][value] < 2) {
-
-            // deck[suit][value] += 1;
-            setDeck(prevDeck => {
-                // Create a new deck object
-                return {
-                    ...prevDeck,
-                    [suit]: {
-                    ...prevDeck[suit],
-                    [value]: prevDeck[suit][value] + 1
-                    }
-                };
-            });
-        } else {
-            alert(`Deck has ${deck[suit][value]} of this card (${value},${suit})`)
-        }
-        console.log(deck)
+        setDeck(prevDeck => {
+            // Create a new deck object
+            return {
+                ...prevDeck,
+                [suit]: {
+                ...prevDeck[suit],
+                [value]: prevDeck[suit][value] + 1
+                }
+            };
+        });
     }
 
     const removeCardFromDeck = (suit, value) => {
         setDeck(prevDeck => {
             // Create a new deck object
-            const newDeck = {
+            return {
                 ...prevDeck,
                 [suit]: {
                     ...prevDeck[suit],
                     [value]: prevDeck[suit][value] - 1
                 }
             };
-            return newDeck;
         });
     }
 

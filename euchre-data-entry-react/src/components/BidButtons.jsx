@@ -53,15 +53,6 @@ const BidButtons = ({ addBid }) => {
             <button type="submit">Add Bid</button>
         </form>
     );
-
-    return (
-        <>
-            <div>
-                <p>{value}</p>
-                <img src={suit} alt="suit" />
-            </div>
-        </>
-    )
 }
 
 export default BidButtons
