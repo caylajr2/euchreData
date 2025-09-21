@@ -2,9 +2,19 @@ import { useState } from 'react'
 import '../styles/cardImageStyle.css'
 import BidLogger from './BidLogger'
 import TrickLogger from './TrickLogger'
+import {cardSuits, cardValues} from './imageConstants.jsx'
 
 
-const HandLogger = ({addHandToFile}) => {
+const HandLogger = ({ addHandToFile }) => {
+    const cards = {};
+    for (const suit of cardSuits) {
+        cards[suit.name] = {};
+        for (const value of cardValues) {
+            cards[suit.name][value.name] = 2;
+        }
+    }
+    const [deck, setDeck] = useState(cards);
+    
     // tricks played in hand, will be moved to hand component and be submitted from there
     const [tricks, setTricks] = useState([]);
     
@@ -14,12 +24,13 @@ const HandLogger = ({addHandToFile}) => {
 
     // function to add trick to array of logged tricks, will be moved to hand component
     const addTrickToHand = trick => {
+        const newDeck = deck;
+
         setTricks(prev => [...prev, trick]);
     }
 
     // function to add bid to array of logged bids
     const addBidToHand = (bid) => {
-        console.log(bid)
         if (bids.length >= 6) {
         alert("Can only have six bids in a hand");
         } else if (bids.length !== 0 && bid.value <= bids.at(-1).value) {
@@ -27,7 +38,6 @@ const HandLogger = ({addHandToFile}) => {
         } else {
         setBids(prev => [...prev, bid]);
         }
-        console.log(bids)
     }
 
     const handleAddHand = (bids, tricks) => {
@@ -43,6 +53,32 @@ const HandLogger = ({addHandToFile}) => {
         }
     }
 
+    const addCardToDeck = (suit, value) => {
+        setDeck(prevDeck => {
+            // Create a new deck object
+            return {
+                ...prevDeck,
+                [suit]: {
+                ...prevDeck[suit],
+                [value]: prevDeck[suit][value] + 1
+                }
+            };
+        });
+    }
+
+    const removeCardFromDeck = (suit, value) => {
+        setDeck(prevDeck => {
+            // Create a new deck object
+            return {
+                ...prevDeck,
+                [suit]: {
+                    ...prevDeck[suit],
+                    [value]: prevDeck[suit][value] - 1
+                }
+            };
+        });
+    }
+
     return (
         <>
             {/* BidLogger updates the bids array */}
@@ -50,7 +86,7 @@ const HandLogger = ({addHandToFile}) => {
             <BidLogger bids={bids} addBid={addBidToHand} />
             {/* TrickLogger updates tricks array with each full trick */}
             <h2>Tricks</h2>
-            <TrickLogger tricksPlayed={tricks} addTrick={addTrickToHand} />
+            <TrickLogger tricksPlayed={tricks} addTrick={addTrickToHand} deck={deck} addCardToDeck={addCardToDeck} removeCardFromDeck={removeCardFromDeck} />
             <button type='submit' onClick={() => handleAddHand(bids, tricks)} >Submit Hand</button>
         </>
     )

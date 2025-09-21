@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './App.css'
 import HandLogger from './components/HandLogger';
 import fs from 'fs';
@@ -5,7 +6,6 @@ import fs from 'fs';
 function App() { 
 
   const addHandToFile = (handData) => {
-    // console.log(handData)
     fetch("http://localhost:3001/save", {
       method: "POST",
       headers: { "Content-Type": "application/json" },

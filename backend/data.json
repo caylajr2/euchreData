@@ -6,23 +6,23 @@
         "value": "1"
       },
       {
-        "suit": "heart",
+        "suit": "spade",
         "value": "2"
       },
       {
-        "suit": "diamond",
+        "suit": "spade",
         "value": "3"
       },
       {
-        "suit": "club",
+        "suit": "heart",
         "value": "4"
       },
       {
-        "suit": "high",
+        "suit": "diamond",
         "value": "5"
       },
       {
-        "suit": "low",
+        "suit": "club",
         "value": "6"
       }
     ],
@@ -30,27 +30,27 @@
       [
         {
           "suit": "spade",
-          "value": "King"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "King"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "King"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "King"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "King"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "King"
+          "value": "Ace"
         }
       ],
       [
@@ -82,105 +82,79 @@
       [
         {
           "suit": "spade",
-          "value": "Queen"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "Queen"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "Queen"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "Queen"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "Queen"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "Queen"
+          "value": "Ace"
         }
       ],
       [
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "King"
         }
       ],
       [
         {
           "suit": "spade",
-          "value": "10"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "10"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "10"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "10"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "10"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "10"
-        }
-      ],
-      [
-        {
-          "suit": "spade",
-          "value": "9"
-        },
-        {
-          "suit": "spade",
-          "value": "9"
-        },
-        {
-          "suit": "spade",
-          "value": "9"
-        },
-        {
-          "suit": "spade",
-          "value": "9"
-        },
-        {
-          "suit": "spade",
-          "value": "9"
-        },
-        {
-          "suit": "spade",
-          "value": "9"
+          "value": "King"
         }
       ],
       [
@@ -212,27 +186,53 @@
       [
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "Queen"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "Queen"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "Queen"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "Queen"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "Queen"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "Queen"
+        }
+      ],
+      [
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
         }
       ]
     ]
@@ -244,23 +244,23 @@
         "value": "1"
       },
       {
-        "suit": "heart",
+        "suit": "spade",
         "value": "2"
       },
       {
-        "suit": "diamond",
+        "suit": "spade",
         "value": "3"
       },
       {
-        "suit": "club",
+        "suit": "heart",
         "value": "4"
       },
       {
-        "suit": "high",
+        "suit": "diamond",
         "value": "5"
       },
       {
-        "suit": "low",
+        "suit": "club",
         "value": "6"
       }
     ],
@@ -268,27 +268,27 @@
       [
         {
           "suit": "spade",
-          "value": "King"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "King"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "King"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "King"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "King"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "King"
+          "value": "Ace"
         }
       ],
       [
@@ -320,105 +320,79 @@
       [
         {
           "suit": "spade",
-          "value": "Queen"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "Queen"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "Queen"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "Queen"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "Queen"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "Queen"
+          "value": "Ace"
         }
       ],
       [
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "King"
         }
       ],
       [
         {
           "suit": "spade",
-          "value": "10"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "10"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "10"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "10"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "10"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "10"
-        }
-      ],
-      [
-        {
-          "suit": "spade",
-          "value": "9"
-        },
-        {
-          "suit": "spade",
-          "value": "9"
-        },
-        {
-          "suit": "spade",
-          "value": "9"
-        },
-        {
-          "suit": "spade",
-          "value": "9"
-        },
-        {
-          "suit": "spade",
-          "value": "9"
-        },
-        {
-          "suit": "spade",
-          "value": "9"
+          "value": "King"
         }
       ],
       [
@@ -450,27 +424,53 @@
       [
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "Queen"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "Queen"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "Queen"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "Queen"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "Queen"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "Queen"
+        }
+      ],
+      [
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
         }
       ]
     ]
@@ -482,23 +482,23 @@
         "value": "1"
       },
       {
-        "suit": "heart",
+        "suit": "spade",
         "value": "2"
       },
       {
-        "suit": "diamond",
+        "suit": "spade",
         "value": "3"
       },
       {
-        "suit": "club",
+        "suit": "heart",
         "value": "4"
       },
       {
-        "suit": "high",
+        "suit": "diamond",
         "value": "5"
       },
       {
-        "suit": "low",
+        "suit": "club",
         "value": "6"
       }
     ],
@@ -506,27 +506,27 @@
       [
         {
           "suit": "spade",
-          "value": "King"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "King"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "King"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "King"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "King"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "King"
+          "value": "Ace"
         }
       ],
       [
@@ -558,105 +558,79 @@
       [
         {
           "suit": "spade",
-          "value": "Queen"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "Queen"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "Queen"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "Queen"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "Queen"
+          "value": "Ace"
         },
         {
           "suit": "spade",
-          "value": "Queen"
+          "value": "Ace"
         }
       ],
       [
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "King"
         }
       ],
       [
         {
           "suit": "spade",
-          "value": "10"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "10"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "10"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "10"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "10"
+          "value": "King"
         },
         {
           "suit": "spade",
-          "value": "10"
-        }
-      ],
-      [
-        {
-          "suit": "spade",
-          "value": "9"
-        },
-        {
-          "suit": "spade",
-          "value": "9"
-        },
-        {
-          "suit": "spade",
-          "value": "9"
-        },
-        {
-          "suit": "spade",
-          "value": "9"
-        },
-        {
-          "suit": "spade",
-          "value": "9"
-        },
-        {
-          "suit": "spade",
-          "value": "9"
+          "value": "King"
         }
       ],
       [
@@ -688,27 +662,53 @@
       [
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "Queen"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "Queen"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "Queen"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "Queen"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "Queen"
         },
         {
           "suit": "spade",
-          "value": "Jack"
+          "value": "Queen"
+        }
+      ],
+      [
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
         }
       ]
     ]

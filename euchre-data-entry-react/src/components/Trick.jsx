@@ -3,7 +3,7 @@ import '../styles/trickStyle.css'
 import '../styles/cardImageStyle.css'
 
 const Trick = ({ trickClass, cardClass, cardsPlayed }) => {
-    
+
     return (
         <>
             {/* displays cards in current trick using prop cardsPlayed */}
