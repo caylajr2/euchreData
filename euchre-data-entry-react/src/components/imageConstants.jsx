@@ -22,7 +22,7 @@ import six from '../assets/6.png'
 import seven from '../assets/7.png'
 import eight from '../assets/8.png'
 
-export const bidValues = [
+export const biddingValues = [
     {
         name: '1',
         image: one,

@@ -2,7 +2,7 @@ import '../styles/cardImageStyle.css'
 import Bid from './Bid'
 import BidButtons from './BidButtons'
 
-const BidLogger = ({ bids, addBid }) => {
+const BidLogger = ({ bids, addBid, removeBid }) => {
 
     return (
         <>
@@ -13,6 +13,7 @@ const BidLogger = ({ bids, addBid }) => {
                     </li>
                 )}
             </ul>
+            <button onClick={removeBid}>Remove last bid</button>
             <BidButtons addBid={ addBid } />
         </>
     )

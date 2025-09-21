@@ -2,7 +2,7 @@ import { useState } from 'react'
 import '../styles/cardImageStyle.css'
 import BidLogger from './BidLogger'
 import TrickLogger from './TrickLogger'
-import {cardSuits, cardValues} from './imageConstants.jsx'
+import {cardSuits, cardValues, biddingSuits, biddingValues} from './imageConstants.jsx'
 
 
 const HandLogger = ({ addHandToFile }) => {
@@ -30,13 +30,24 @@ const HandLogger = ({ addHandToFile }) => {
     }
 
     // function to add bid to array of logged bids
-    const addBidToHand = (bid) => {
+    const addBidToHand = (newSuit, newValue) => {
         if (bids.length >= 6) {
         alert("Can only have six bids in a hand");
-        } else if (bids.length !== 0 && bid.value <= bids.at(-1).value) {
+        } else if (bids.length !== 0 && newValue <= bids.at(-1).value.value) {
         alert("Bid must be larger than previous bid");
         } else {
-        setBids(prev => [...prev, bid]);
+            const suit = biddingSuits.find(e => e.name === newSuit);
+            const value = biddingValues.find(e => e.name === newValue);
+            const newBid = { suit, value }
+            setBids(prev => [...prev, newBid]);
+        }
+    }
+
+    const removeBidFromHand = () => {
+        if (bids.length <= 0) {
+        alert("Can only have six bids in a hand");
+        } else {
+        setBids(prev => prev.slice(0,-1));
         }
     }
 
@@ -83,7 +94,7 @@ const HandLogger = ({ addHandToFile }) => {
         <>
             {/* BidLogger updates the bids array */}
             <h2>Bids</h2>
-            <BidLogger bids={bids} addBid={addBidToHand} />
+            <BidLogger bids={bids} addBid={addBidToHand} removeBid={removeBidFromHand} />
             {/* TrickLogger updates tricks array with each full trick */}
             <h2>Tricks</h2>
             <TrickLogger tricksPlayed={tricks} addTrick={addTrickToHand} deck={deck} addCardToDeck={addCardToDeck} removeCardFromDeck={removeCardFromDeck} />
