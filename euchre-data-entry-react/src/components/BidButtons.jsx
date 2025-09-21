@@ -1,8 +1,8 @@
 import { useState } from "react";
-import {biddingSuits} from './imageConstants.jsx'
+import {biddingSuits, bidValues} from './imageConstants.jsx'
 import '../styles/bidButtonStyle.css'
 
-const bidValues = [1, 2, 3, 4, 5, 6, 7];
+// const bidValues = [1, 2, 3, 4, 5, 6, 7];
 // const suits = ['spade', 'heart', 'diamond', 'club', 'high', 'low']
 
 const BidButtons = ({ addBid }) => {
@@ -22,12 +22,34 @@ const BidButtons = ({ addBid }) => {
 
     return (
         <form onSubmit={handleSubmitBid}>
+            
+            <div className="bid-buttons-section">
+                {bidValues.map((value, idx) => (
+                <label key={idx}>
+                    <input 
+                        type="radio" 
+                        name="value-choice" 
+                        value={value.name} 
+                        checked={selectedValue === value.name} 
+                        onChange={(e) => setSelectedValue(e.target.value)} 
+                        className="bid-button-radio"
+                    />
+                    <img
+                        className= "bid-suit-image"
+                        src={value.image}
+                        alt={`${value.name}`}
+                    />
+                    {/* <p>{ value }</p> */}
+                </label>
+                ))}
+            </div>
+            <p>Selected Value: {selectedValue}</p>
             <div className="bid-buttons-section">
                 {biddingSuits.map((suit, idx) => (
                     <label className="bid-button-label" key={idx}>
                         <input 
                             type="radio" 
-                            name="choice" 
+                            name="suit-choice" 
                             value={suit.name} 
                             checked={selectedSuit === suit.name} 
                             onChange={(e) => setSelectedSuit(e.target.value)} 
@@ -42,27 +64,11 @@ const BidButtons = ({ addBid }) => {
                 ))}
             </div>
             <p>Selected Suit: {selectedSuit}</p>
-            <div style={{ display: "flex", gap: "1rem" }}>
-                {bidValues.map((value, idx) => (
-                <label key={idx}>
-                    <input type="radio" name="choice" value={value} checked={selectedValue === value} onChange={(e) => setSelectedValue(e.target.value)} style={{ display: "none" }} />
-                    <p>{ value }</p>
-                </label>
-                ))}
-            </div>
-            <p>Selected Value: {selectedValue}</p>
+
             <button type="submit">Add Bid</button>
         </form>
     );
 
-    return (
-        <>
-            <div>
-                <p>{value}</p>
-                <img src={suit} alt="suit" />
-            </div>
-        </>
-    )
 }
 
 export default BidButtons
