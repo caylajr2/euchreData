@@ -22,25 +22,6 @@ div.card-image.logged-trick {
 
 }
 
-/* p.card-value {
-    font-size: 1.8em;
-    font-weight: bold;
-    font-family:'faustina','Times New Roman', Times, serif;
-    line-height: .6em;
-    color: black;
-
-}
-
-p.card-value-top {
-    text-align: left;
-    align-self: flex-start;
-
-}
-
-p.card-value-bottom {
-    text-align: right;
-    align-self: flex-end
-} */
 
 img.card-suit {
     width: 60%;
