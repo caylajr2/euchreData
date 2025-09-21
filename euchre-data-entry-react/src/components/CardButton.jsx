@@ -2,11 +2,11 @@ import react from 'react'
 import Card from './Card'
 import '../styles/cardButtonStyle.css'
 
-const CardButton = ({ card, addToTrick }) => {
+const CardButton = ({ disabled, card, addToTrick }) => {
 
     return (
         <>
-            <button className="card-button" onClick={() => addToTrick(card)}>
+            <button disabled= {disabled} className="card-button" onClick={() => addToTrick(card)}>
                 <Card card={card}/>
             </button>
         </>
