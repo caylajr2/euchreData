@@ -2,7 +2,30 @@ import { useState } from 'react'
 import '../styles/cardImageStyle.css'
 import BidLogger from './BidLogger'
 import TrickLogger from './TrickLogger'
-import {cardSuits, cardValues, biddingSuits, biddingValues} from './imageConstants.jsx'
+import { cardSuits, cardValues, biddingSuits, biddingValues } from './imageConstants.jsx'
+
+const highestBid = (bids) => {
+    let value = 0;
+    for (const bid of bids) {
+        if (bid.value.value > value) {
+            value = bid.value.value
+        }
+    }
+    return value
+}
+
+const getBidValue = (type, value) => {
+    if (type === 'shoot') {
+        return {name:'shoot', value:16,image:''}
+    }
+    if (type === 'pshoot') {
+        return {name:'pshoot', value:12,image:''}
+    }
+    if (type === 'pass') {
+        return {name:'pass', value:0,image:''}
+    }
+    return biddingValues.find(e => e.name === value)
+}
 
 
 const HandLogger = ({ addHandToFile }) => {
@@ -40,22 +63,33 @@ const HandLogger = ({ addHandToFile }) => {
     }
 
     // function to add bid to array of logged bids
-    const addBidToHand = (newSuit, newValue) => {
+    const addBidToHand = (newType, newSuit, newValue) => {
+        const type = newType;
+
+        const suit = type !== "regular" ? {suit:'', image:''} : biddingSuits.find(e => e.name === newSuit);
+        const value = getBidValue(type, newValue);
+        // const value = type !== "regular" ? undefined : biddingValues.find(e => e.name === newValue);
+
+        const newBid = { type, suit, value }
+        console.log('type '+type)
+        console.log(newBid)
+        console.log(highestBid(bids))
+        
         if (bids.length >= 6) {
             alert("Can only have six bids in a hand");
-        } else if (bids.length !== 0 && newValue <= bids.at(-1).value.value) {
-            alert("Bid must be larger than previous bid");
-        } else {
-            const suit = biddingSuits.find(e => e.name === newSuit);
-            const value = biddingValues.find(e => e.name === newValue);
-            const newBid = { suit, value }
+        } else if (type === 'pass' || type === 'pshoot' || type === 'shoot') {
             setBids(prev => [...prev, newBid]);
+        } else if (type=="regular"  && value?.value > highestBid(bids)) {
+            setBids(prev => [...prev, newBid]);
+        } else {
+            alert(`an error occured when adding bid {type:${type}, suit:${suit}, value:${value}}`)
         }
+
     }
 
     const removeBidFromHand = () => {
         if (bids.length <= 0) {
-            alert("Can only have six bids in a hand");
+            alert("There are no bids to remove");
         } else {
             setBids(prev => prev.slice(0,-1));
         }
