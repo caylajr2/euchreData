@@ -2,27 +2,33 @@
   {
     "bids": [
       {
+        "type": "regular",
         "suit": "spade",
         "value": "1"
       },
       {
+        "type": "regular",
         "suit": "heart",
         "value": "2"
       },
       {
+        "type": "regular",
         "suit": "diamond",
         "value": "3"
       },
       {
+        "type": "regular",
         "suit": "club",
         "value": "4"
       },
       {
+        "type": "regular",
         "suit": "high",
         "value": "5"
       },
       {
-        "suit": "high",
+        "type": "regular",
+        "suit": "low",
         "value": "6"
       }
     ],
@@ -30,45 +36,7 @@
       [
         {
           "suit": "spade",
-          "value": "King"
-        },
-        {
-          "suit": "spade",
-          "value": "King"
-        },
-        {
-          "suit": "spade",
           "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Ace"
-        },
-        {
-          "suit": "spade",
-          "value": "Queen"
-        },
-        {
-          "suit": "spade",
-          "value": "Queen"
-        }
-      ],
-      [
-        {
-          "suit": "spade",
-          "value": "Jack"
-        },
-        {
-          "suit": "spade",
-          "value": "Jack"
-        },
-        {
-          "suit": "spade",
-          "value": "10"
-        },
-        {
-          "suit": "spade",
-          "value": "10"
         },
         {
           "suit": "spade",
@@ -77,50 +45,50 @@
         {
           "suit": "spade",
           "value": "9"
+        },
+        {
+          "suit": "spade",
+          "value": "10"
+        },
+        {
+          "suit": "spade",
+          "value": "10"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        }
+      ],
+      [
+        {
+          "suit": "spade",
+          "value": "Ace"
+        },
+        {
+          "suit": "spade",
+          "value": "Jack"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "Queen"
+        },
+        {
+          "suit": "spade",
+          "value": "King"
+        },
+        {
+          "suit": "spade",
+          "value": "King"
         }
       ],
       [
         {
           "suit": "heart",
           "value": "Ace"
-        },
-        {
-          "suit": "heart",
-          "value": "Ace"
-        },
-        {
-          "suit": "heart",
-          "value": "King"
-        },
-        {
-          "suit": "heart",
-          "value": "King"
-        },
-        {
-          "suit": "heart",
-          "value": "Queen"
-        },
-        {
-          "suit": "heart",
-          "value": "Queen"
-        }
-      ],
-      [
-        {
-          "suit": "heart",
-          "value": "Jack"
-        },
-        {
-          "suit": "heart",
-          "value": "Jack"
-        },
-        {
-          "suit": "heart",
-          "value": "10"
-        },
-        {
-          "suit": "heart",
-          "value": "10"
         },
         {
           "suit": "heart",
@@ -129,20 +97,50 @@
         {
           "suit": "heart",
           "value": "9"
+        },
+        {
+          "suit": "heart",
+          "value": "10"
+        },
+        {
+          "suit": "heart",
+          "value": "10"
+        },
+        {
+          "suit": "heart",
+          "value": "Jack"
+        }
+      ],
+      [
+        {
+          "suit": "heart",
+          "value": "Ace"
+        },
+        {
+          "suit": "heart",
+          "value": "Jack"
+        },
+        {
+          "suit": "heart",
+          "value": "Queen"
+        },
+        {
+          "suit": "heart",
+          "value": "Queen"
+        },
+        {
+          "suit": "heart",
+          "value": "King"
+        },
+        {
+          "suit": "heart",
+          "value": "King"
         }
       ],
       [
         {
           "suit": "diamond",
           "value": "Ace"
-        },
-        {
-          "suit": "diamond",
-          "value": "Ace"
-        },
-        {
-          "suit": "diamond",
-          "value": "King"
         },
         {
           "suit": "diamond",
@@ -154,29 +152,11 @@
         },
         {
           "suit": "diamond",
-          "value": "Queen"
-        }
-      ],
-      [
-        {
-          "suit": "diamond",
-          "value": "Jack"
-        },
-        {
-          "suit": "diamond",
           "value": "Jack"
         },
         {
           "suit": "diamond",
           "value": "10"
-        },
-        {
-          "suit": "diamond",
-          "value": "10"
-        },
-        {
-          "suit": "diamond",
-          "value": "9"
         },
         {
           "suit": "diamond",
@@ -185,42 +165,42 @@
       ],
       [
         {
-          "suit": "club",
+          "suit": "diamond",
           "value": "Ace"
         },
         {
-          "suit": "club",
-          "value": "Ace"
-        },
-        {
-          "suit": "club",
+          "suit": "diamond",
           "value": "King"
         },
         {
-          "suit": "club",
-          "value": "King"
-        },
-        {
-          "suit": "club",
+          "suit": "diamond",
           "value": "Queen"
         },
         {
-          "suit": "club",
-          "value": "Queen"
+          "suit": "diamond",
+          "value": "Jack"
+        },
+        {
+          "suit": "diamond",
+          "value": "10"
+        },
+        {
+          "suit": "diamond",
+          "value": "9"
         }
       ],
       [
         {
           "suit": "club",
-          "value": "Jack"
+          "value": "Ace"
         },
         {
           "suit": "club",
-          "value": "Jack"
+          "value": "Ace"
         },
         {
           "suit": "club",
-          "value": "10"
+          "value": "9"
         },
         {
           "suit": "club",
@@ -232,7 +212,33 @@
         },
         {
           "suit": "club",
-          "value": "9"
+          "value": "Jack"
+        }
+      ],
+      [
+        {
+          "suit": "club",
+          "value": "King"
+        },
+        {
+          "suit": "club",
+          "value": "King"
+        },
+        {
+          "suit": "club",
+          "value": "Queen"
+        },
+        {
+          "suit": "club",
+          "value": "Queen"
+        },
+        {
+          "suit": "club",
+          "value": "Jack"
+        },
+        {
+          "suit": "club",
+          "value": "10"
         }
       ]
     ]

@@ -5,7 +5,7 @@ import Trick from './Trick'
 import '../styles/trickStyle.css'
 import undoIcon from '../assets/undo.png'
 
-const TrickLogger = ({ tricksPlayed, addTrick, deck, addCardToDeck, removeCardFromDeck }) => {
+const TrickLogger = ({ tricksPlayed, addTrick, deck, addCardToDeck, removeCardFromDeck, removeTrickFromHand }) => {
     // keeps track of cards played in current open trick
     const [cardsPlayed, setCardsPlayed] = useState([])
 
@@ -55,6 +55,15 @@ const TrickLogger = ({ tricksPlayed, addTrick, deck, addCardToDeck, removeCardFr
         }
     }
 
+    const handleRemoveTrick = () => {
+        removeTrickFromHand();
+        for (const card of cardsPlayed) {
+            addCardToDeck(card.suit.name, card.value.name)
+        }
+        setCardsPlayed([]);
+    }
+
+
     return (
         <div id='trick-logger-container'>
             <div id="previous-tricks-comtainer">
@@ -67,6 +76,7 @@ const TrickLogger = ({ tricksPlayed, addTrick, deck, addCardToDeck, removeCardFr
                         </li>
                     )}
                 </ul>
+                <button onClick={handleRemoveTrick}>Remove last trick</button>
             </div>
             <div id='trick-data-entry-container'>
                 {/* displays cards played on current trick */}
