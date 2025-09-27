@@ -104,7 +104,7 @@ const HandLogger = ({ addHandToFile }) => {
                 return card;
             }))
 
-            const simpleBids = bids.map(b => { return { suit: b.suit.name, value: b.value.name } })
+            const simpleBids = bids.map(b => { return { type: b.type, suit: b.suit.name, value: b.value.name } })
             
             addHandToFile({ bids: simpleBids, tricks: simpleTricks })
             setBids([])
