@@ -66,7 +66,7 @@ const HandLogger = ({ addHandToFile }) => {
     const addBidToHand = (newType, newSuit, newValue) => {
         const type = newType;
 
-        const suit = type !== "regular" ? {suit:'', image:''} : biddingSuits.find(e => e.name === newSuit);
+        const suit = type !== "regular" ? {name:'', image:''} : biddingSuits.find(e => e.name === newSuit);
         const value = getBidValue(type, newValue);
         // const value = type !== "regular" ? undefined : biddingValues.find(e => e.name === newValue);
 
@@ -104,8 +104,8 @@ const HandLogger = ({ addHandToFile }) => {
                 return card;
             }))
 
-            const simpleBids = bids.map(b => { return { type: b.type, suit: b.suit.name, value: b.value.name } })
-            
+            const simpleBids = bids.map(b => { return { type: b.type, suit: b.suit.name, value: b.value.value } })
+            console.log(simpleBids)
             addHandToFile({ bids: simpleBids, tricks: simpleTricks })
             setBids([])
             setTricks([])
